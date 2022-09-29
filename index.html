@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="./style/style.css">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous"> -->
+  <title>Frontend Mentor | Fylo landing page with two column layout</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {  text-align: center; }
+    .attribution a { color: hsl(0, 0%, 0%); }
+  </style>
+</head>
+<body>
+
+<nav id="nav">
+  <div class="navitem mycontainer">
+    <div class="logo">
+      <img src="./images/logo.svg">
+    </div>
+    <ul class="fs-normal">
+      <li>
+        Features
+      </li>
+      <li>
+        Team
+      </li>
+      <li>
+        Sign In
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<section class="h-900px h-sm-650px h-xxl-900px d-flex align-items-center">
+  <div class="mycontainer d-flex justify-content-between flex-sm-row flex-column">
+    <div class="d-flex flex-column col-sm-6 col-12 text-center text-sm-start justify-content-center">
+      <h2 class="fs-2 lh-base fc-very-dark-blue fw-semibold">
+        All your files in one secure location, accessible anywhere.
+      </h2>
+      <span class="my-4 lh-base fs-normal">
+        Fylo stores your most important files in one secure location. 
+        Access them wherever you need, share and collaborate with friends, 
+        family, and co-workers.
+      </span>
+      <form class="d-flex col-12 justify-content-start flex-sm-row flex-column mt-3 mb-3">
+        <div style="border: 1px solid rgb(156, 156, 156);" class="col-sm-7 col-12 ps-4 py-sm-0 py-3 mb-sm-0 mb-3 rounded-2 overflow-hidden">
+          <input id="input-1" style="outline: none; background: none;" class="col-12 h-100 border-0">
+        </div>
+        <button class="btn-bright-blue text-light ms-sm-3 m-0 col-sm-4 col-12 py-3 fs-normal"> 
+          Get Started
+        </button>
+      </form>
+      <span id="message-1" style="height: 20px;color: #dc3545;" class="fs-normal"></span>
+    </div>
+    <div class="col-sm-5 col-12 order-lg-last order-first">
+      <img src="./images/illustration-1.svg" width="100%">
+    </div>
+  </div>
+</section>
+
+<section class="background-image h-1000px h-sm-900px d-flex align-items-center">
+  <div class="mycontainer d-flex justify-content-between flex-column flex-sm-row">
+    <div class="d-flex flex-column justify-content-between col-12 col-sm-6">
+      <h2 class="fs-5 mb-4 mt-sm-0 fw-semibold text-center text-sm-start fc-very-dark-blue">
+        Stay productive, wherever you are
+      </h2>
+      <span class="mb-3 fs-normal">
+        Never let location be an issue when accessing your files. Fylo has you 
+        covered for all of your file storage needs.
+      </span>
+      <span class="mb-3 fs-normal">
+        Securely share files and folders with friends, family and colleagues for 
+        live collaboration. No email attachments required!
+      </span>
+      <div class="d-flex col-12 justify-content-center justify-content-sm-start">
+        <a class="mb-5 mt-3 fs-normal link d-flex justify-content-between">
+          See how Fylo works
+          <img src="./images/icon-arrow.svg">
+        </a>
+      </div>
+      <div class="card px-4 py-3 col-12 col-sm-8 col-xxl-7">
+        <div class="card-body p-2 p-sm-3">
+          <h6 class="card-subtitle mb-2 fs-normal text-muted"><img src="./images/icon-quotes.svg"></h6>
+          <p class="card-text fs-small lh-base">        
+            Fylo has improved our team productivity by an order of magnitude. Since 
+            making the switch our team has become a well-oiled collaboration machine.
+          </p>
+          <div class="fs-normal d-flex mt-4 mt-sm-3">
+            <img src="./images/avatar-testimonial.jpg" class="rounded-circle me-3" width="55">
+            <div class="d-flex flex-column fs-small justify-content-center">
+              <span class="text-dark fw-bold">Kyle Burton</span>
+              <span>Founder & CEO, Huddle</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+
+      </div>
+    </div>
+    <div class="col-12 order-first col-sm-5">
+      <img src="./images/illustration-2.svg" width="100%">
+    </div>
+  </div>
+</section>
+
+<section class="bg-desaturated-blue text-light d-flex align-items-center h-400px">
+  <div class="mycontainer d-flex justify-content-between align-items-center flex-column flex-sm-row">
+    <div class="d-flex flex-column col-12 col-sm-6">
+      <span class="fs-medium mb-4 text-center text-sm-start">
+        Get early access today
+      </span>
+      <span class="fs-normal lh-base text-center text-sm-start">
+        It only takes a minute to sign up and our free starter tier is extremely generous. 
+        If you have any questions, our support team would be happy to help you.
+      </span>
+    </div>
+    <form style="border:1px solid unset" class="col-10 col-sm-5 mt-4 mt-sm-0 justify-content-center flex-column d-flex">
+      <div style="border: 1px solid rgb(156, 156, 156);" class="mb-sm-0 mb-2 col-12 rounded-2 overflow-hidden">
+        <input style="outline: none;" id="input-2" class="h-100 col-12 border-0 ps-3 py-2 py-sm-3">
+      </div>
+      <span id="message-2" style="height: 20px;color: white;" class="mb-2 mb-sm-4 fs-normal order-last order-sm-2"></span>
+      <button class="fs-normal btn-bright-blue text-light align-self-start col-12 col-sm-7 py-2 py-sm-3 order-2 order-sm-last">Get Started For Free</button>
+    </form>
+  </div>
+</section>
+
+  <footer class="d-flex align-items-center bg-very-dark-blue h-650px h-sm-400px">
+    <div class="mycontainer d-flex flex-column">
+      <div class="logo-footer mb-4">
+        <img src="./images/logo2.svg">
+      </div>
+      <div style="border: 1px solid unset;" class="text-light mt-4 mt-sm-0 fs-normal d-flex justify-content-between flex-column flex-sm-row">
+        <ul class="d-flex p-0 flex-column list-unstyled ">
+          <li class="mb-2">
+            <img class="me-2" src="./images/icon-phone.svg">
+            Phone: +1-543-123-4567
+          </li>
+          <li>
+            <img class="me-2" src="./images/icon-email.svg">
+            example@fylo.com
+          </li>
+        </ul>
+
+      <ul class="d-flex flex-column p-0 list-unstyled nav-footer  mt-4 mt-sm-0">
+        <li class="mb-3">
+          About Us
+        </li>
+        <li class="mb-2">
+          Jobs
+        </li>
+        <li class="mb-2">
+          Press
+        </li>
+        <li>
+          Blog
+        </li>
+      </ul>
+      
+      <ul class="d-flex flex-column p-0 list-unstyled nav-footer  mt-4 mt-sm-0">
+        <li class="mb-3">
+          Contact Us
+        </li>
+        <li class="mb-2">
+          Terms
+        </li>
+        <li>
+          Privacy
+        </li>
+        
+      </ul>
+
+      <div id="socialmedia-dekstop" class="d-flex social-media justify-content-between align-items-start col-sm-2  mt-4 mt-sm-0">
+        <div style="border: 1px solid white; width: 50px; height: 50px;" class="rounded-5 d-flex align-items-center justify-content-center">
+          <img src="./images/facebook.png" width="25" height="25">
+        </div>
+        <div style="border: 1px solid white; width: 50px; height: 50px;" class="rounded-5 d-flex align-items-center justify-content-center">
+          <img src="./images/twitter.png" width="25" height="25">
+        </div>
+        <div style="border: 1px solid white; width: 50px; height: 50px;" class="rounded-5 d-flex align-items-center justify-content-center">
+          <img src="./images/instagram.png" width="25" height="25">
+        </div>
+      </div>
+      <div id="socialmedia-mobile" class="d-none social-media col-12 justify-content-center justify-content-sm-between align-items-start col-sm-2  mt-4 mt-sm-0">
+        <div style="border: 1px solid white; width: 35px; height: 35px;" class="rounded-5 d-flex align-items-center justify-content-center">
+          <img src="./images/facebook.png" width="18" height="18">
+        </div>
+        <div style="border: 1px solid white; width: 35px; height: 35px;" class="rounded-5 d-flex align-items-center mx-sm-0 mx-4 justify-content-center">
+          <img src="./images/twitter.png" width="18" height="18">
+        </div>
+        <div style="border: 1px solid white; width: 35px; height: 35px;" class="rounded-5 d-flex align-items-center justify-content-center">
+          <img src="./images/instagram.png" width="18" height="18">
+        </div>
+      </div>
+      </div>
+    </footer>
+    <p class="attribution fs-small m-0 py-2">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Rizky Yuliyanto</a>.
+    </p>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+  <script>
+    const nav = document.getElementById("nav");
+    const input_1 = document.getElementById("input-1");
+    const message_1 = document.getElementById("message-1");
+    const input_2 = document.getElementById("input-2");
+    const message_2 = document.getElementById("message-2");
+    const logo = document.querySelector(".logo");
+    const social = document.getElementById("socialmedia-dekstop");
+    const social2 = document.getElementById("socialmedia-mobile");
+
+    if (window.innerWidth < 800) {
+      social.classList.replace("d-flex", "d-none");
+      social2.classList.replace("d-none", "d-flex");
+    }else {
+      social.classList.replace("d-none", "d-flex");
+      social2.classList.replace("d-flex", "d-none");
+    }
+
+    window.onscroll = () => {
+      if (window.scrollY > nav.offsetHeight) {
+        nav.style.background = "hsl(243, 87%, 12%)";
+        nav.style.color = "white";
+        logo.firstElementChild.src = "./images/logo2.svg"
+      }else {
+        nav.style.background = "none";
+        logo.firstElementChild.src = "./images/logo.svg"
+        nav.style.color = "black";
+      }
+    }
+
+    input_1.onfocus = () => {
+      input_1.parentNode.style.border = "1px solid #dc3545"
+      message_1.innerHTML = "Please check your email"
+    }
+
+    input_2.onfocus = () => {
+      input_2.parentNode.style.border = "1px solid #dc3545"
+      message_2.innerHTML = "Please check your email"
+    }
+
+    window.onclick = (e) => {
+      if (window.event.target !== input_1 && window.event.target !== input_2) {
+        input_1.parentNode.style.border = "1px solid rgb(156, 156, 156)"; 
+        message_1.innerHTML = "" 
+        input_2.parentNode.style.border = "1px solid rgb(156, 156, 156)";           
+        message_2.innerHTML = ""
+      }
+    }
+  </script>
+</body>
+</html>

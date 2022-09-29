@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+@import url("../node_modules/bootstrap/scss/functions");
+@import url("../node_modules/bootstrap/scss/variables");
+@import url("../node_modules/bootstrap/scss/utilities");
+
+:root {
+    --fs-normal: 1.4rem;
+    --fs-large: 2.8rem;
+    --fs-medium: 2.5rem;
+    --fs-small:1rem;
+    --lh: 30px;
+    @media screen and (max-width: 1439px) {
+        --fs-normal: 1rem;
+        --fs-large: 2.3rem;
+        --fs-medium: 2rem;
+        --fs-small:0.8rem;
+        --lh: 30px;
+    }
+    @media screen and (max-width: 799px) {
+        --fs-normal: 1rem;
+        --fs-large: 1.6rem;
+        --fs-medium: 1.2rem;
+        --fs-small:0.9rem;
+        --lh: 30px;
+    }
+}
+
+.bg-desaturated-blue {
+    background-color:hsl(238, 22%, 44%);
+}
+
+.background-image {
+    width: 100%;
+    background-image: url("../images/bg-curve-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size:cover;
+    @media screen and (max-width: 799px) {
+        background-image: url("../images/bg-curve-mobile.svg");
+    }
+}
+
+.btn-bright-blue {
+    background-color: hsl(224, 93%, 58%);
+    border: none;
+    border-radius: 5px;
+    &:hover {
+        // border: 0.5px solid white;
+        background-color: hsl(224, 98%, 65%);
+    }
+}
+.bg-very-dark-blue {
+    background-color: hsl(243, 87%, 12%);
+}
+.fc-very-dark-blue {
+    color:hsl(243, 87%, 12%);
+}
+
+.fs-large {
+    font-size: var(--fs-large);
+}
+
+.fs-medium {
+    font-size: var(--fs-medium);
+}
+
+.fs-normal {
+    font-size: var(--fs-normal);
+}
+
+.fs-small {
+    font-size: var(--fs-small);
+}
+
+.height-350 {
+    height: 350px;
+}
+
+* {
+    margin:0; padding:0;
+    box-sizing: border-box;
+}
+
+.mycontainer {
+    width: 1440px;
+    margin: 0 auto;
+    @media screen and (max-width: 1439px) {
+        width: 80%;
+    }
+    @media screen and (max-width: 799px) {
+        width: 85%;
+    }
+}
+
+
+nav {
+    height: 100px;
+    align-items: center;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    font-family: 'Raleway';
+    .navitem {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: space-between;
+        ul {
+            width: 400px;
+            margin: 0;
+            justify-content: space-between;
+            display: flex;
+            li {
+                list-style-type: none;
+                &:hover {
+                    cursor: pointer;
+                    color: hsl(170, 45%, 43%);
+                }
+            }
+            @media screen and (max-width: 799px) {
+                width: 300px;
+                font-size: var(--fs-small);
+            }
+        }
+    }
+}
+
+.link {
+    color: hsl(170, 45%, 43%);
+    text-decoration: none;
+    width: 35%;
+    padding-bottom: 5px;
+    position: relative;
+    @media screen and (max-width: 799px) {
+        width: 55%;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        transition:width 0.5s ease;
+        height: 1.5px;
+        background-color: hsl(170, 45%, 43%);
+    }
+    &:hover{
+        color: hsl(170, 45%, 43%);
+        cursor: pointer;
+        &::after {
+            width: 100%;
+        }
+    }
+}
+
+section {
+    font-family:"Open sans";
+    width: 100%;
+}
+
+.logo {
+    img {
+        width: 75%;
+    }
+}
+
+$utilities:(
+    "height": (
+        property: height,
+        class: h,
+        responsive: true,
+        values: (
+          25: 25%,
+          50: 50%,
+          75: 75%,
+          100: 100%,
+          400px: 400px,
+          650px: 650px,
+          900px: 900px,
+          1000px: 1000px,
+          auto: auto
+        )
+      )
+);
+
+.nav-footer {
+    li {
+        &:hover {
+            &:not(&:nth-child(1)){                
+                cursor: pointer;
+                color: hsl(238, 22%, 44%);
+            }
+        }
+    }
+}
+
+.social-media {
+  div {
+    &:hover {
+        cursor: pointer;
+    }
+  }
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap";
