@@ -132,8 +132,11 @@ nav {
     width: 35%;
     padding-bottom: 5px;
     position: relative;
+    @media screen and (max-width: 1279px) {
+        width: 30%;
+    }
     @media screen and (max-width: 799px) {
-        width: 55%;
+        width: 60%;
     }
     &::after {
         content: "";
@@ -177,6 +180,7 @@ $utilities:(
           100: 100%,
           400px: 400px,
           650px: 650px,
+          750px: 750px,
           900px: 900px,
           1000px: 1000px,
           auto: auto

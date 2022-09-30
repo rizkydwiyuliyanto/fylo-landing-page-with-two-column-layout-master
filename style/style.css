@@ -146,9 +146,14 @@ nav .navitem ul li:hover {
   padding-bottom: 5px;
   position: relative;
 }
+@media screen and (max-width: 1279px) {
+  .link {
+    width: 30%;
+  }
+}
 @media screen and (max-width: 799px) {
   .link {
-    width: 55%;
+    width: 60%;
   }
 }
 .link::after {
@@ -7603,6 +7608,10 @@ textarea.form-control-lg {
   height: 650px !important;
 }
 
+.h-750px {
+  height: 750px !important;
+}
+
 .h-900px {
   height: 900px !important;
 }
@@ -8665,6 +8674,9 @@ textarea.form-control-lg {
   .h-sm-650px {
     height: 650px !important;
   }
+  .h-sm-750px {
+    height: 750px !important;
+  }
   .h-sm-900px {
     height: 900px !important;
   }
@@ -9187,6 +9199,9 @@ textarea.form-control-lg {
   }
   .h-md-650px {
     height: 650px !important;
+  }
+  .h-md-750px {
+    height: 750px !important;
   }
   .h-md-900px {
     height: 900px !important;
@@ -9711,6 +9726,9 @@ textarea.form-control-lg {
   .h-lg-650px {
     height: 650px !important;
   }
+  .h-lg-750px {
+    height: 750px !important;
+  }
   .h-lg-900px {
     height: 900px !important;
   }
@@ -10234,6 +10252,9 @@ textarea.form-control-lg {
   .h-xl-650px {
     height: 650px !important;
   }
+  .h-xl-750px {
+    height: 750px !important;
+  }
   .h-xl-900px {
     height: 900px !important;
   }
@@ -10756,6 +10777,9 @@ textarea.form-control-lg {
   }
   .h-xxl-650px {
     height: 650px !important;
+  }
+  .h-xxl-750px {
+    height: 750px !important;
   }
   .h-xxl-900px {
     height: 900px !important;
