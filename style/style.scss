@@ -129,12 +129,9 @@ nav {
 .link {
     color: hsl(170, 45%, 43%);
     text-decoration: none;
-    width: 35%;
+    width: 50%;
     padding-bottom: 5px;
     position: relative;
-    @media screen and (max-width: 1279px) {
-        width: 30%;
-    }
     @media screen and (max-width: 799px) {
         width: 60%;
     }
